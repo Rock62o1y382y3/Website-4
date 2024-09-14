@@ -3,61 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flantic - Multipurpose Discord Bot</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1 class="title">Bot Dashboard</h1>
-            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-            <nav class="sidebar">
-                <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#developers" class="nav-link">Developers</a></li>
-                    <li><a href="#owner" class="nav-link">Owner</a></li>
-                    <li><a href="#commands" class="nav-link">Commands</a></li>
-                    <li><a href="#settings" class="nav-link">Settings</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="Flantic Logo">
+            <h1>Flantic</h1>
         </div>
+        <p>Flantic is a multipurpose discord bot built to enhance your discord experience!</p>
     </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h2 class="section-title">Welcome to Your Dashboard</h2>
-                <img src="banner.jpg" alt="Dashboard Banner" class="banner-img">
-                <p class="hero-text">Manage your bot effortlessly with our sleek and intuitive dashboard.</p>
-            </div>
-        </section>
-        <section id="developers" class="info">
-            <div class="container">
-                <h2 class="section-title">Meet the Developers</h2>
-                <img src="developers.jpg" alt="Developers" class="info-img">
-                <p class="info-text">Our skilled team ensures your bot operates seamlessly and efficiently.</p>
-            </div>
-        </section>
-        <section id="owner" class="info">
-            <div class="container">
-                <h2 class="section-title">About the Owner</h2>
-                <img src="owner.jpg" alt="Owner" class="info-img">
-                <p class="info-text">Learn about the vision and background of the person behind the bot.</p>
-            </div>
-        </section>
-        <section id="commands" class="info">
-            <div class="container">
-                <h2 class="section-title">Bot Commands</h2>
-                <img src="commands.jpg" alt="Commands" class="info-img">
-                <p class="info-text">Discover all the commands available to enhance your bot’s capabilities.</p>
-            </div>
-        </section>
-        <section id="settings" class="settings">
-            <div class="container">
-                <h2 class="section-title">Settings</h2>
-                <form id="settings-form" class="form">
-                    <label for="server-name">Server Name:</label>
-                    <input type="text" id="server-name" name="server-name" placeholder="Enter server name" required>
-                    <label for="bot-prefix">Bot Prefix:</label>
-                    <input type="text" id="bot-prefix" name="
-                        
+
+    <section class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Anti Nuke</li>
+            <li>Tickets</li>
+            <li>Giveaway</li>
+            <li>Moderation</li>
+        </ul>
+    </section>
+
+    <section class="company">
+        <h2>Company</h2>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Imprint</a></li>
+        </ul>
+    </section>
+
+    <section class="legal">
+        <h2>Legal</h2>
+        <ul>
+            <li><a href="#">Refund Policy</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2020-2023 Flantic</p>
+        <div class="socials">
+            <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://github.com"><img src="github.png" alt="GitHub"></a>
+        </div>
+        <p>This website uses cookies for analytics purposes and session storage. See our <a href="#">cookie policy</a>.</p>
+        <button class="cookie-accept">Accept all</button>
+        <button class="cookie-reject">Reject all</button>
+    </footer>
+</body>
+</html>
