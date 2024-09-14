@@ -1,199 +1,76 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Body */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
-    overflow-x: hidden;
-}
-
-/* Header */
-header {
-    background-color: #2c3e50;
+    background-color: #101010;
     color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
+    text-align: center;
+    padding: 20px;
 }
 
-header .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    background-color: #00ff88;
+    padding: 20px;
+    color: #101010;
+}
+
+header .logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.title {
-    font-size: 2.5em;
-    font-weight: 700;
-    letter-spacing: 1px;
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
 }
 
-.menu-toggle {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2em;
-    cursor: pointer;
-    display: none;
+.features, .company, .legal {
+    margin: 20px 0;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #34495e;
-    padding: 20px;
-    transition: right 0.3s ease;
-    z-index: 1000;
+h2 {
+    color: #00ff88;
+    margin-bottom: 10px;
 }
 
-.sidebar ul {
+ul {
     list-style: none;
 }
 
-.sidebar li {
-    margin: 20px 0;
+ul li {
+    margin: 5px 0;
 }
 
-.sidebar .nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.sidebar .nav-link:hover {
-    background-color: #18bc9c;
-}
-
-/* Main */
-main {
-    padding: 40px 0;
-    margin-right: 250px;
-    transition: margin-right 0.3s ease;
-}
-
-section {
-    background: #ffffff;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.hero {
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #2c3e50;
-}
-
-.banner-img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 20px 0;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.info-img {
-    flex: 1;
-    max-width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero-text, .info-text {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Forms */
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form label {
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-.form input, .form textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1em;
-    width: 100%;
-    transition: border-color 0.3s;
-}
-
-.form input:focus, .form textarea:focus {
-    border-color: #18bc9c;
-    outline: none;
-}
-
-.form button {
-    padding: 12px;
-    background-color: #2c3e50;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-}
-
-.form button:hover {
-    background-color: #1a252f;
-}
-
-/* Footer */
 footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    margin-top: 20px;
 }
 
-footer .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+footer p {
+    margin: 10px 0;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    .sidebar {
-        right: 0;
+.socials a {
+    margin: 0 10px;
+}
 
-    
+.socials img {
+    width: 20px;
+}
+
+.cookie-accept, .cookie-reject {
+    background-color: #00ff88;
+    color: #101010;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.cookie-reject {
+    background-color: #ff4444;
+}
